@@ -39,7 +39,6 @@
             <h1 th:text="'Editando al Paciente: ' + ${paciente.getName()} + ' ' + ${paciente.getLastName()}"></h1>
         </div>
     </div>
-<main>
     <main class="d-flex justify-content-center text-start">
         <form class="form w-75" method="post" th:action="@{/pacientes}" th:object="${paciente}">
             <input type="hidden" id="id" name="id" th:value="${paciente.getId()}">
